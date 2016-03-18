@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 source Configuration.sh
 
 cd $BASE_DIR
