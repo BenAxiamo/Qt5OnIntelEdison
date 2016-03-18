@@ -9,7 +9,7 @@ mkdir build
 mkdir build/bitbake_download_dir
 mkdir build/bitbake_sstate_dir
 cd $BASE_DIR/edison-src/
-./meta-intel-edison/setup.sh --dl_dir=../build/bitbake_download_dir --sstate_dir=../build/bitbake_sstate_dir
+#./meta-intel-edison/setup.sh --dl_dir=../build/bitbake_download_dir --sstate_dir=../build/bitbake_sstate_dir
 source poky/oe-init-build-env
-echo "TMPDIR="$TMP_DIR >> $BASE_DIR/edison_src/build/conf/local.conf
+echo "TMPDIR="$TMP_DIR >> $BASE_DIR/edison-src/build/conf/local.conf
 bitbake edison-image
