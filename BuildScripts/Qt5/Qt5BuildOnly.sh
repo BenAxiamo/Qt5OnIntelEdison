@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Base_Dir: "$BASE_DIR
+echo "ImageName: "$ImageName
+echo "TMP_DIR:"$TMP_DIR
 
 source BuildScripts/Configuration.sh
 
