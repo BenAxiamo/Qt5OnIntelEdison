@@ -5,11 +5,12 @@ echo "ImageName: "$ImageName
 echo "TMP_DIR:"$TMP_DIR
 
 recipe = $1
+
 echo "------from shell-------------"
 echo "Arg0: " $0
 echo "Arg1: " $1
 echo "Arg2: " $2
-$1 = build
+set -- build
 echo "------before source-------------"
 echo "Arg0: " $0
 echo "Arg1: " $1
