@@ -9,7 +9,7 @@ echo "------from shell-------------"
 echo "Arg0: " $0
 echo "Arg1: " $1
 echo "Arg2: " $2
-unset $1
+$1 = build
 echo "------before source-------------"
 echo "Arg0: " $0
 echo "Arg1: " $1
