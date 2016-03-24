@@ -7,4 +7,7 @@ source BuildScripts/Configuration.sh
 
 cd $BASE_DIR/edison-src/
 source poky/oe-init-build-env
-bitbake $1
+
+echo "------before bitbake-------------"
+pwd
+echo "----------------------"
