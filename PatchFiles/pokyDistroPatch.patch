@@ -1,0 +1,14 @@
+*** poky-edison.conf.orig	2016-03-24 14:40:36.402664460 +0100
+--- poky-edison.conf	2016-03-24 14:46:11.934670759 +0100
+***************
+*** 18,20 ****
+--- 18,26 ----
+  VIRTUAL-RUNTIME_init_manager = "systemd"
+  # Uncomment to completely disable support for sysv scripts:
+  PACKAGECONFIG_pn-systemd = "xz"
++ 
++ INHERIT += "blacklist"
++ PNBLACKLIST[bluez4] = "we need bluez5 for qt, bluez4 and bluez5 are in conflict"
++ 
++ DISTRO_FEATURES_remove = " pulseaudio" 
++ 

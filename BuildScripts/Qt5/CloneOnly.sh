@@ -6,3 +6,6 @@ cd $BASE_DIR/edison-src/
 git clone -b daisy https://github.com/meta-qt5/meta-qt5.git
 
 
+
+git clone -b daisy git://git.openembedded.org/meta-openembedded
+

@@ -1,0 +1,59 @@
+*** edison-image.bb.orig	2016-03-24 11:15:44.818433703 +0100
+--- edison-image.bb	2016-03-24 11:25:23.494444567 +0100
+***************
+*** 37,43 ****
+  inherit bootimg
+  do_bootimg[depends] += "${PN}:do_rootfs"
+  
+! IMAGE_ROOTFS_SIZE = "524288"
+  
+  IMAGE_FEATURES += "package-management ssh-server-openssh"
+  # Allow passwordless root login and postinst logging
+--- 37,43 ----
+  inherit bootimg
+  do_bootimg[depends] += "${PN}:do_rootfs"
+  
+! IMAGE_ROOTFS_SIZE = "1048576"
+  
+  IMAGE_FEATURES += "package-management ssh-server-openssh"
+  # Allow passwordless root login and postinst logging
+***************
+*** 168,170 ****
+--- 168,204 ----
+  # nfs
+  IMAGE_INSTALL += "nfs-utils"
+  
++ IMAGE_INSTALL += "qtbase-fonts"
++ IMAGE_INSTALL += "qtbase-plugins"
++ IMAGE_INSTALL += "qtbase-tools"
++ IMAGE_INSTALL += "qtbase-examples"
++ IMAGE_INSTALL += "qtdeclarative"
++ IMAGE_INSTALL += "qtdeclarative-plugins"
++ IMAGE_INSTALL += "qtdeclarative-tools"
++ IMAGE_INSTALL += "qtdeclarative-examples"
++ IMAGE_INSTALL += "qtdeclarative-qmlplugins"
++ IMAGE_INSTALL += "qtmultimedia"
++ IMAGE_INSTALL += "qtmultimedia-plugins"
++ IMAGE_INSTALL += "qtmultimedia-examples"
++ IMAGE_INSTALL += "qtmultimedia-qmlplugins"
++ IMAGE_INSTALL += "qtsvg"
++ IMAGE_INSTALL += "qtsvg-plugins"
++ IMAGE_INSTALL += "qtsensors"
++ IMAGE_INSTALL += "qtimageformats-plugins"
++ IMAGE_INSTALL += "qtsystems"
++ IMAGE_INSTALL += "qtsystems-tools"
++ IMAGE_INSTALL += "qtsystems-examples"
++ IMAGE_INSTALL += "qtsystems-qmlplugins"
++ IMAGE_INSTALL += "qtscript"
++ IMAGE_INSTALL += "qt3d"
++ IMAGE_INSTALL += "qt3d-examples"
++ IMAGE_INSTALL += "qt3d-qmlplugins"
++ IMAGE_INSTALL += "qt3d-tools"
++ IMAGE_INSTALL += "qtwebkit"
++ IMAGE_INSTALL += "qtwebkit-examples-examples"
++ IMAGE_INSTALL += "qtwebkit-qmlplugins"
++ IMAGE_INSTALL += "qtgraphicaleffects-qmlplugins"
++ IMAGE_INSTALL += "qtconnectivity-qmlplugins"
++ IMAGE_INSTALL += "qtlocation-plugins"
++ IMAGE_INSTALL += "qtlocation-qmlplugins"
++ 
