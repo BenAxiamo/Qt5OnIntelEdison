@@ -1,0 +1,5 @@
+rm -rf met-intel-iot-middleware
+git clone git://git.yoctoproject.org/meta-intel-iot-middleware
+
+IMAGE_INSTALL += "iotkit-comm-js"
+
